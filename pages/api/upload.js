@@ -2,7 +2,7 @@ import cloudinary from "cloudinary";
 
 const cloudinaryConfig = {
   cloud_name: "ifeomaimoh",
-  api_key: process.env.CLOUDINARY_API_Key,
+  api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
   secure: true,
 };
@@ -16,7 +16,7 @@ async function handler(req, res) {
     return res.json({ message: "upload successful" });
   } catch (error) {
     console.log({ err: error.message });
-    res.json({ message: "oopsie an error occured" });
+    res.json({ message: "Hello! error occured" });
   }
 }
 export default handler;
