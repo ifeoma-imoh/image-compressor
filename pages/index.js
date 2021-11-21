@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FileInput from "../components/FileInput";
+import FileInput from "../components/fileInput";
 import ImagePreviewer from "../components/imagePreviewer";
 import { compressFile, download, readFileAsBase64 } from "../helpers";
 import axios from "axios";
